@@ -1,0 +1,78 @@
+/* COR DE FUNDO */
+body { 
+  background-color: #afcccd;
+}
+/* TITULO PRINCIPAL */
+h1 {
+ font-size: 55px;
+ text-align: center;
+}
+/* SUBTITULO */
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+/* COMIDA E BEBIDAS */
+h3 {
+    font-size: 25px;
+    padding-left: 20px;
+}
+/* NOME DOS LANCHES */
+h4 {
+    font-size: 20px;
+    padding-left: 15px;
+}
+/* DESCRIÇÃO DOS ITENS E PRECOS */
+.descricao {
+ font-size: 15px;
+ margin: 10px 0px 10px 15px;
+}
+.preco {
+    font-size: 15px;
+    margin: 20px 0px 15px 15px;
+}
+.item-cardapio {
+    padding-left: 30px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+
+    /*Ativando o Flexbox na caixa pai */
+    display: flex;               
+    
+    /* Alinhamento Horizontal: empurra o texto para a esquerda e a foto para a direita */
+    justify-content: space-between; 
+    
+    /* Alinhamento Vertical (CENTRALIZAÇÃO)*/
+    /* Esse comando faz com que o texto e a foto fiquem bem alinhados no meio um do outro, */
+    /* evitando que a foto fique muito para cima ou caída muito para baixo! */
+    align-items: center;         
+}
+.foto-lanche {
+    width: 120px;       /* 🌟 ADICIONADO: Define a largura da foto */
+    height: 120px;      /* 🌟 ADICIONADO: Define a altura da foto para ficar quadradinha */
+    border-radius: 20px; /* Faz uma mágica: arredonda os cantinhos da foto para ficar moderno! */
+    margin-top: 10px;   /* Dá um espacinho entre o preço e a foto */
+    object-fit: cover;  /* Garante que a imagem não fique esticada ou amassada */
+}
+/* Esta regra controla a nova caixinha que criamos no HTML */
+.texto-e-preco {
+    display: flex;         /* LIGA O FLEXBOX: força o texto e o preço a ficarem na mesma linha horizontal */
+    align-items: center;   /* ALINHAMENTO VERTICAL: coloca o preço exatamente no MEIO (altura) da descrição */
+    gap: 40px;             /* DISTÂNCIA: garante que o preço nunca grude ou passe por cima do texto */
+}
+
+/* Ajuste na descrição para o preço ir para o canto certo */
+.descricao {
+    margin: 0;             /* Limpa margens antigas do parágrafo que podiam quebrar o alinhamento */
+    flex: 1;               /* SUPERPODER: diz para o texto esticar e ocupar todo o espaço esquerdo disponível, 
+    max-width: 500px;
+
+/* Estilo visual do preço */
+.preco {
+    color: #ff9f1c;        /* Mantém a cor laranja chamativa do seu cardápio */
+    font-weight: bold;     /* Deixa o preço em negrito para se destacar bastante */
+    font-size: 18px;       /* Tamanho ideal para o cliente bater o olho e ver o valor */
+    margin: 0;             /* Zera as margens para não desalinhá-lo do meio do texto */
+    white-space: nowrap;   /* ANTI-QUEBRA: impede que o 'R$' e o '28,00' se separem em duas linhas se a tela diminuir */
+}

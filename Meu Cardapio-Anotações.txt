@@ -1,0 +1,9 @@
+Meu Cardapio
+
+Fiz a parte de criar as pastas do VScode - Integrei o GitHub ao VS - criei um perfil privado no git, oq significa que meu perfil esta lincado ao meu VS, e que tudo oq eu fizer vai ser salvo na nuvem e na internet.
+
+Montei a base de HMTL: 
+Titulo
+Sub-Titulo
+Sessão de comidas
+Sessão de bebidas // 08.10.2026 - Inicio //
